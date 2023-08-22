@@ -1,1 +1,1 @@
-print("Moro maailmalle! Juho Mäkeläinen täällä!")
+print("Moro Juho Mäkeläinen!")
