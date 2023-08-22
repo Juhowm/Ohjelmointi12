@@ -1,0 +1,5 @@
+kanta_kirj = input("Mikä on suorakulmion kannan pituus? ")
+korkeus_kirj = input("Mikä on suorakulmion korkeus? ")
+kanta = float(kanta_kirj)
+korkeus = float(korkeus_kirj)
+print(f"Suorakulmion piiri on {(kanta*2)+(korkeus*2)},\nja sen pinta-ala on {kanta*korkeus}.")
