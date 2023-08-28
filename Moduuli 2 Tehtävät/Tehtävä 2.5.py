@@ -12,8 +12,8 @@ naulamassa = naula*13.3*32
 #1 leiviskä on 20 naulaa
 leivismassa = leivis*13.3*32*20
 tosimassa = luotimassa+naulamassa+leivismassa
-tosimassakilo = tosimassa//1000
+tosimassakilo = int(tosimassa//1000)
 #kokeile modulo
 
-print(f"Massa modernisti on \n{tosimassakilo:.0f} kilogrammaa")
-print(f"ja {tosimassa-tosimassakilo*1000:.2f} grammaa")
+print(f"Massa modernisti on \n{tosimassakilo} kilogrammaa")
+print(f"ja {tosimassa % 1000} grammaa")
