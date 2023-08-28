@@ -1,5 +1,5 @@
 sp = input("Oletko biologisesti mies vai nainen? ")
-if not sp == "mies" and not sp == "nainen":
+if sp != "mies" and sp != "nainen":
     exit("kirjoitusvirhe tai toimimaton arvo sukupuolessa")
 else:
     hg = float(input("Mikä on hemoglobiiniarvosi yksikkönä g/l? "))
