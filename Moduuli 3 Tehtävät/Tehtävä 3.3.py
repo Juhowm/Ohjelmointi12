@@ -1,5 +1,8 @@
 sp = input("Oletko biologisesti mies vai nainen? ")
-hg = float(input("Mikä on hemoglobiiniarvosi yksikkönä g/l? "))
+if not sp == "mies" and not sp == "nainen":
+    exit("kirjoitusvirhe tai toimimaton arvo sukupuolessa")
+else:
+    hg = float(input("Mikä on hemoglobiiniarvosi yksikkönä g/l? "))
 if sp == "mies" and hg > 195 or sp == "nainen" and hg > 175:
     print("Hemoglobiiniarvosi on korkea.")
 elif sp == "mies" and hg < 134 or sp == "nainen" and hg < 117:
