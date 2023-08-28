@@ -1,5 +1,6 @@
 koko = float(input("Mikä on kuhan pituus senttimetreinä? "))
 if koko >= 37:
-    print("Nam!")
+    print("Mukavan kokoinen kala!")
 else:
-    print(f"Liian pieni, laske takaisin järveen! \nKuhan pitäisi olla {37-koko:.0f} senttiä suurempi!")
+    print("Liian pieni, laske takaisin järveen! "
+          f"\nKuhan pitäisi olla noin {37-koko:.0f} senttiä pidempi!")
