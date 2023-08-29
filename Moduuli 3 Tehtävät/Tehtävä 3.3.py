@@ -1,6 +1,6 @@
 sp = input("Oletko biologisesti mies vai nainen? ")
 if sp != "mies" and sp != "nainen":
-    exit("kirjoitusvirhe tai toimimaton arvo sukupuolessa")
+    exit("kirjoitusvirhe tai odottamaton arvo sukupuolessa")
 else:
     hg = float(input("Mikä on hemoglobiiniarvosi yksikkönä g/l? "))
 if sp == "mies" and hg > 195 or sp == "nainen" and hg > 175:
