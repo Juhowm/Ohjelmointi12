@@ -3,7 +3,7 @@ pistesis = 0
 #ympyrän siälle päätyvien pisteiden määrä
 pistelrg = 0
 #ympyrän ulkopuolelle päätyvien pisteiden määrä
-pistemr = int(input("Anna arvottavien pisteiden määrä"))
+pistemr = int(input("Anna arvottavien pisteiden määrä: "))
 #satunnaisten pisteiden määrä
 if pistemr < 0:
     exit("negatiiviset luvut eivät kelpaa")
@@ -14,4 +14,6 @@ while pistemr != 0:
         pistesis += 1
     pistemr -= 1
     pistelrg += 1
-print(f"{4*pistesis/pistelrg}")
+    print(pistesis)
+    print(pistelrg)
+print(f"Piin likiarvo on {4*pistesis/pistelrg}")
