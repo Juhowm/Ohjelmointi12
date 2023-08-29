@@ -1,7 +1,10 @@
 import random
 pistesis = 0
+#ympyrän siälle päätyvien pisteiden määrä
 pistelrg = 0
+#ympyrän ulkopuolelle päätyvien pisteiden määrä
 pistemr = int(input("Anna arvottavien pisteiden määrä"))
+#satunnaisten pisteiden määrä
 if pistemr < 0:
     exit("negatiiviset luvut eivät kelpaa")
 while pistemr != 0:
