@@ -5,17 +5,16 @@ hyv = ("lisää", "hae", "stop")
 def terv():
     tere = input("Jos haluat lisätä tietokantaan lentokentän, kirjoita 'lisää'"
                  "\nJos haluat etsiä lentokenttää ICAO-koodilla, kirjoita 'hae'"
-                 "\nJos haluat lopettaa ohjelman, kirjoita 'stop'"
-                 "\n")
+                 "\nJos haluat lopettaa ohjelman, kirjoita 'stop' ")
     return tere
 
 
 print(hyv)
 terve = terv()
-for s in hyv:
-    if terve != s:
-        print("Tunnistamaton input")
-        terve = terv()
+#for s in hyv:
+    #if terve != s:
+        #print("Tunnistamaton input")
+        #terve = terv()
 while terve == "lisää":
     asemat[input("Anna aseman ICAO: ")] = input("Anna asenan nimi: ")
     terve = terv()
@@ -28,3 +27,5 @@ while terve == "hae":
     terve = terv()
 while terve == "stop":
     exit("Hyvästi")
+else:
+    exit("käynnistä uudelleen")
