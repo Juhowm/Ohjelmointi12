@@ -1,5 +1,6 @@
-asemat = {"EFHK": "Helsinki-Vantaan lentokenttä", }
-hyv = ("lisää", "hae", "stop")
+asemat = {"EFHK": "Helsinki-Vantaan lentokenttä",
+          "KJFK": "John F. Kennedyn kansainvälinen lentokenttä"}
+hyv = {"lisää", "hae", "stop"}
 
 
 def terv():
@@ -9,10 +10,9 @@ def terv():
     return tere
 
 
-print(hyv)
 terve = terv()
-#for s in hyv:
-    #if terve != s:
+for s in hyv:
+    #if s != terve:
         #print("Tunnistamaton input")
         #terve = terv()
 while terve == "lisää":
