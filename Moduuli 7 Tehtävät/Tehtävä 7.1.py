@@ -1,2 +1,2 @@
-vuodenajat = ("talvi", "kesä", "syksy", "talvi")
-kk = int(input("Monesko valitsemasi kuukausi on? "))
+vuodenajat = ("kevät", "kesä", "syksy", "talvi")
+

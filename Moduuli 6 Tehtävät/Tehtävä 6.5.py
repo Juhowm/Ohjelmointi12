@@ -1,4 +1,5 @@
 def poisto(luklis):
+    luklis = luklis.copy()
     for n in luklis:
         if n % 2 != 0:
             luklis.remove(n)
@@ -7,7 +8,6 @@ def poisto(luklis):
 
 
 luli = [1, 2, 3, 4, 5, 6]
-orig = [1, 2, 3, 4, 5, 6]
 pois = poisto(luli)
-print(orig)
+print(luli)
 print(pois)
