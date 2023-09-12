@@ -11,7 +11,7 @@ def terv():
 
 
 terve = terv()
-for s in hyv:
+#for s in hyv:
     #if s != terve:
         #print("Tunnistamaton input")
         #terve = terv()
