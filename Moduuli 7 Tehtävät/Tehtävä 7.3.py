@@ -1,14 +1,13 @@
 asemat = {"EFHK": "Helsinki-Vantaan lentokenttä", }
 hyv = ("lisää", "hae", "stop")
-#hyväksytyt hakutermit
 
 
 def terv():
-    terveh = input("Jos haluat lisätä tietokantaan lentokentän, kirjoita 'lisää'"
-                    "\nJos haluat etsiä lentokenttää ICAO-koodilla, kirjoita 'hae'"
-                    "\nJos haluat lopettaa ohjelman, kirjoita 'stop'"
-                    "\nNäistä poikkeavia ei hyväksytä ")
-    return terveh
+    tere = input("Jos haluat lisätä tietokantaan lentokentän, kirjoita 'lisää'"
+                 "\nJos haluat etsiä lentokenttää ICAO-koodilla, kirjoita 'hae'"
+                 "\nJos haluat lopettaa ohjelman, kirjoita 'stop'"
+                 "\n")
+    return tere
 
 
 def lisäys(icao, asema):
@@ -28,12 +27,15 @@ for s in hyv:
     if terve != s:
         print("Tunnistamaton input")
         terve = terv()
-        #tarkistaa onko kirjoitettu hakutermi hyväksyttyjen listalla ja pyytää uuden jos ei
 while terve == "lisää":
-    lisää = lisäys(input("Anna aseman ICAO: "), input("Anna asenan nimi: "))
+    asemat[input("Anna aseman ICAO: ")] = input("Anna asenan nimi: ")
     terve = terv()
 while terve == "hae":
-    haku(input("Anna etsimäsi aseman ICAO: "))
+    haku = input("Anna etsimäsi aseman ICAO: ")
+    if haku in asemat:
+        print(f"{asemat[haku]}")
+    else:
+        print("Asemaa ei löytynyt tietokannastamme")
     terve = terv()
 while terve == "stop":
     exit("Hyvästi")
