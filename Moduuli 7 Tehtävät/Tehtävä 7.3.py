@@ -10,18 +10,7 @@ def terv():
     return tere
 
 
-def lisäys(icao, asema):
-    lisä = asemat[icao] = asema
-    return lisä
-
-
-def haku(hicao):
-    if hicao in asemat:
-        print(f"{asemat[hicao]}")
-    else:
-        print("Asemaa ei löytynyt tietokannastamme")
-
-
+print(hyv)
 terve = terv()
 for s in hyv:
     if terve != s:
