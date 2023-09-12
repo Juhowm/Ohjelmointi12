@@ -1,5 +1,7 @@
 def summaus(luklis):
-    summa = sum(luklis)
+    summa = 0
+    for luku in luklis:
+        summa = summa + luku
     return summa
 
 
