@@ -12,7 +12,7 @@ yhteys = mysql.connector.connect(
 
 def get_country_by_icao_code(icao_code):
     cursor = yhteys.cursor()
-    sql = f"SELECT ident, name, municipality FROM airport WHERE gps_code = '{icao_code}'"
+    sql = f"SELECT name, municipality FROM airport WHERE gps_code = '{icao_code}'"
     cursor.execute(sql)
     result = cursor.fetchmany()
     if result:
@@ -22,4 +22,4 @@ def get_country_by_icao_code(icao_code):
 
 
 country = get_country_by_icao_code(input("Syötä icao-koodi: "))
-print(f"Lentokentän nimi on {country[1]} ja se sijaitsee kunnassa {country[2]}")
+print(f"Lentokentän nimi on {country[0]} ja se sijaitsee kunnassa {country[1]}")
